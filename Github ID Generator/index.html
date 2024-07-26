@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #717171;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            color: #333;
+            background-color: #e0e0e0;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ccc;
+            color: #333;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        button:hover {
+            background-color: #bbb;
+        }
+
+        .card {
+            background-color: #333;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            margin: 10px 0;
+            font-size: 24px;
+            color: #222;
+        }
+
+        .card p {
+            margin: 5px 0;
+            font-size: 18px;
+            color: #999;
+        }
+    </style>
+</head>
+<body >
+    <div class="container">
+            <input type="text" id="input" placeholder="Enter any GitHub userID"><br>
+            <button id="button" >Generate ID</button>
+        <div class="card" style="background-color: #414141;">
+            <img src="" alt="" id="img">
+            <h2 id="name"></h2>
+            <p id="followers"></p>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
+
+<!-- console.log( requestUrl);
+const userID = String( requestUrl)
+console.log(userID);
+
+
+const generate = function(){
+    const requestUrl = new String ("https://api.github.com/users/X")
+    
+    // const userID = String(input.value)
+    // requestUrl.replace('X', userID)
+    console.log(`${requestUrl}`);
+
+} -->
